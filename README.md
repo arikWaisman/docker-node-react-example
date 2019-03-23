@@ -6,9 +6,14 @@ make sure you have docker and docker-compose install on your machine
 
 copy .env.example into a .env file and modify
 
-run 
+run for development mode (so the api restarts with changes)
 ```bash
 ./compose-development.sh
+```
+
+for production mode just run
+```bash
+docker-compose up
 ```
 this will build up the docker containers for the node api, mysql 5.7, react build process and nginx.
 
