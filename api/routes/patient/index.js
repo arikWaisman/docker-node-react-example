@@ -21,7 +21,7 @@ router.get(
 router.post(
   '/:id',
   authorizedToken,
-  authorizedUserType('patient'),
+  authorizedUserType(['patient']),
   canViewPatient,
   updatePatientByUserId,
 );

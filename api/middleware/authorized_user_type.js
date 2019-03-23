@@ -15,7 +15,7 @@ module.exports = allowedType => {
         const allowed = allowedType.join(', ');
 
         return res.status(422).json({
-          msg: `only users of type's ${allowed} can access this data`,
+          msg: `only users of types ${allowed} can access this data`,
         });
       }
 
