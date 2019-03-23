@@ -52,7 +52,7 @@ class App extends Component {
 
     return (
       <div className="section">
-        <Link to="/signin">Log into to go to your dashboard</Link>
+        <Link to="/signin">Log in to go to your dashboard</Link>
       </div>
     );
   };
