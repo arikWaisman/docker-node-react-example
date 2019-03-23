@@ -1,0 +1,9 @@
+version: '3'
+services:
+
+  api: 
+   command: > 
+      bash -c "./wait-for-it.sh db:3306 -- 
+      rm -rf node_modules && 
+      npm install && 
+      npm run dev"
