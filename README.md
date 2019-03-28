@@ -4,7 +4,7 @@ example of using docker to run a node app, react app, mysql and nginx together
 ## To Run
 make sure you have docker and docker-compose install on your machine
 
-copy .env.example into a .env file and modify
+copy .env.example into an .env file in the projects root and modify to suit your needs. 
 
 run for development mode (so the api restarts with changes)
 ```bash
