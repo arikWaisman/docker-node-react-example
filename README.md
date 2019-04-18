@@ -30,7 +30,7 @@ This is a single page React Redux app. You will need to log in to get the JWT to
 
 The tokens will only last for one hour, and you will be redirected to `/signin` if you try to access a protected route with an expired token
 
-There is some level of User/Role route management (there is some on the API side as well) going on so you will be redirected to the dashboard you are allowed to visist if you try to access pages/routes that do not match your user type.
+There is some level of User/Role route management (there is some on the API side as well) going on so you will be redirected to the dashboard if you try to access pages/routes that do not match your user type.
 
 Any user routes:
 ```
