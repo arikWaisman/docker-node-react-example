@@ -13,12 +13,12 @@ services:
     # volumes:
     #   - ./mysql-data:/var/lib/mysql
     ports: 
-      - 3306:3306
+      - ${DB_PORT}:3306
 
   api: 
     image: 'node:latest'
     command: > 
-      bash -c "./wait-for-it.sh db:3306 -- 
+      bash -c "./wait-for-it.sh db:${DB_PORT} -- 
       rm -rf node_modules &&
       npm install && 
       npm start"

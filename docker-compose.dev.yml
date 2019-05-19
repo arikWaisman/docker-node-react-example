@@ -3,7 +3,7 @@ services:
 
   api: 
    command: > 
-      bash -c "./wait-for-it.sh db:3306 -- 
+      bash -c "./wait-for-it.sh db:${DB_PORT}` -- 
       rm -rf node_modules && 
       npm install && 
       npm run dev"
