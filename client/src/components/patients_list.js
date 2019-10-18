@@ -10,6 +10,8 @@ class PatientList extends Component {
     lastName: '',
   };
 
+  timeoutKey = null;
+
   componentDidMount() {
     const { user, token } = this.props;
 
@@ -21,9 +23,30 @@ class PatientList extends Component {
   }
 
   onFilterFieldsChange = e => {
+    const threshold = 500;
+
     this.setState({
       [e.target.name]: e.target.value.trim(),
     });
+
+    if (this.timeoutKey) {
+      clearTimeout(this.timeoutKey);
+    }
+
+    this.timeoutKey = setTimeout(() => {
+      const { user, token } = this.props;
+      const { firstName, lastName } = this.state;
+      if (!user || !token) {
+        return null;
+      }
+
+      this.props.fetchPatients(user.id, token, {
+        firstName,
+        lastName,
+      });
+
+      this.timeoutKey = null;
+    }, threshold);
   };
 
   onFilterSubmit = e => {
