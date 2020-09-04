@@ -34,7 +34,7 @@
   "devDependencies": {
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-prettier": "^3.0.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "prettier": "^1.16.4",
     "redux-logger": "^3.0.6"
   }
