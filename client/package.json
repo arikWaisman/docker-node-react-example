@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "material-icons": "^0.3.0",
     "materialize-css": "^1.0.0-rc.2",
     "react": "^16.8.4",
