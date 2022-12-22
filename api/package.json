@@ -8,7 +8,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "faker": "^4.1.0",
-    "jsonwebtoken": "^8.5.0",
+    "jsonwebtoken": "^9.0.0",
     "mysql2": "^1.6.5",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
